@@ -9,7 +9,7 @@ class School
   end 
   
   def add_student(name, grade)
-    if @roster.has_kay?(grade)
+    if @roster.has_key?(grade)
       roster[grade].push(name)
     else 
       roster[grade] = []
