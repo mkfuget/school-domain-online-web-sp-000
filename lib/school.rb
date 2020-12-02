@@ -5,4 +5,10 @@ class School
   end 
   
   def add_student(name, grade)
-    if @roster
+    if @roster.has_kay?(grade)
+      roster[grade].push(name)
+    else 
+      roster[grade] = []
+      roster[grade].push(name)
+    end 
+  end
